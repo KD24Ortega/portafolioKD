@@ -11,6 +11,9 @@ export default function Contact() {
           <p>Si quieres colaborar o tienes una oportunidad, escríbeme.</p>
           <div className="contact-links">
             <a href={`mailto:${personal.email}`}>Email</a>
+            {personal.cv !== "#" && (
+              <a href={personal.cv} target="_blank" rel="noreferrer">CV</a>
+            )}
             <a href={personal.github} target="_blank" rel="noreferrer">GitHub</a>
             <a href={personal.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
           </div>

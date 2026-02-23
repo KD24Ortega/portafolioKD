@@ -1,4 +1,14 @@
 import { portfolioData } from "../data/portfolioData.js";
+import { useMemo, useState } from "react";
+import { motion as Motion, useReducedMotion } from "framer-motion";
+
+import {
+  fadeSlideUp,
+  fadeSlideUpFast,
+  staggerContainer,
+  staggerItem,
+  viewportOnce,
+} from "../motionPresets";
 
 import {
   FaHtml5,
@@ -108,35 +118,73 @@ const iconMap = {
 
 function SkillGroup({ title, items }) {
   return (
-    <div className="skill-group card">
+    <Motion.div className="skill-group card" variants={fadeSlideUpFast}>
       <h4>{title}</h4>
 
-      <div className="skills-icons-grid">
+      <Motion.div className="skills-icons-grid" variants={staggerContainer}>
         {items.map((item) => (
-          <div key={item} className="tech-card" title={item}>
+          <Motion.div key={item} className="tech-card" title={item} variants={staggerItem}>
             <div className="tech-icon">{iconMap[item] || <FaCode />}</div>
             <span className="tech-label">{item}</span>
-          </div>
+          </Motion.div>
         ))}
-      </div>
-    </div>
+      </Motion.div>
+    </Motion.div>
   );
 }
 
 export default function Skills() {
   const { skills } = portfolioData;
+  const reduceMotion = useReducedMotion();
+
+  const categories = useMemo(() => Object.keys(skills), [skills]);
+  const [activeCategory, setActiveCategory] = useState(null);
+
+  const visibleEntries = useMemo(() => {
+    if (!activeCategory) return Object.entries(skills);
+    return [[activeCategory, skills[activeCategory]]];
+  }, [activeCategory, skills]);
 
   return (
-    <section id="skills" className="section">
+    <Motion.section
+      id="skills"
+      className="section"
+      initial={reduceMotion ? false : "hidden"}
+      whileInView={reduceMotion ? undefined : "visible"}
+      viewport={viewportOnce}
+      variants={fadeSlideUp}
+    >
       <div className="container">
-        <h3 className="section-title">Conocimientos Técnicos</h3>
+        <Motion.h3 className="section-title" variants={fadeSlideUpFast}>Conocimientos Técnicos</Motion.h3>
 
-        <div className="grid-2">
-          {Object.entries(skills).map(([category, items]) => (
+        <Motion.div className="chips skills-filter" aria-label="Filtro de conocimientos técnicos" variants={fadeSlideUpFast}>
+          <button
+            type="button"
+            className="chip"
+            aria-pressed={!activeCategory}
+            onClick={() => setActiveCategory(null)}
+          >
+            Todas
+          </button>
+          {categories.map((category) => (
+            <button
+              key={category}
+              type="button"
+              className="chip"
+              aria-pressed={activeCategory === category}
+              onClick={() => setActiveCategory(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </Motion.div>
+
+        <Motion.div className="grid-2" variants={staggerContainer}>
+          {visibleEntries.map(([category, items]) => (
             <SkillGroup key={category} title={category} items={items} />
           ))}
-        </div>
+        </Motion.div>
       </div>
-    </section>
+    </Motion.section>
   );
 }

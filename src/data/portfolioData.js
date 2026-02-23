@@ -8,7 +8,7 @@ export const portfolioData = {
     email: "david.ortega2468@gmail.com",
     github: "https://github.com/KD24Ortega",
     linkedin: "https://www.linkedin.com/in/david-ortega-0b9350172/",
-    cv: "#", // luego pones link real
+    cv: "/cv.pdf",
   },
 
   about: `Estudiante de sexto nivel de Ingeniería en Tecnologías de la Información en la Universidad de las Fuerzas Armadas con sólidos conocimientos en desarrollo web, gestión de datos, redes e infraestructura. Experiencia práctica en proyectos académicos de aplicaciones web, análisis de métricas con herramientas de monitoreo y virtualización de redes. Busco oportunidades de prácticas preprofesionales donde pueda aplicar mis habilidades técnicas y continuar desarrollándome profesionalmente en entornos de desarrollo web, gestión de datos o infraestructura tecnológica`,
@@ -106,7 +106,7 @@ export const portfolioData = {
     {
       title: "Proyecto Monitoreo de Niveles de Depresion y Ansiedad - CalmaSense",
       description:
-        "Aplicación web para monitoreo de niveles de depresión y ansiedad utilizando FastAPI para el backend, React para el frontend y PostgreSQL para la base de datos.",
+        "Aplicación web para monitoreo de niveles de depresión y ansiedad utilizando el patron de Tres Capas (three-tier architecture) FastAPI para la capa de negocio, React para la capa de presentación y PostgreSQL para la capa de datos.",
       image: "/projects/CalmaSense.png",
       stack: ["Python", "FastAPI", "Docker", "DLIB", "React", "Tailwind CSS", "JavaScript", "PostgreSQL"],
       demo: "#",
@@ -115,7 +115,7 @@ export const portfolioData = {
     {
       title: "Proyecto Monitoreo de Niveles de Atencion - FaceEDU",
       description:
-        "Aplicación web para monitoreo de niveles de atención utilizando FastAPI para el backend, React para el frontend y PostgreSQL para la base de datos.",
+        "Aplicación de escritorio para monitoreo de niveles de atención utilizando un patrón Patrón modular por capas simples con Python(POO), OpenCV, MediaPipe y MySQL para almacenamiento de datos.",
       image: "/projects/FaceEDU.png",
       stack: ["Python", "OpenCV", "MediaPipe", "MySQL"],
       demo: "#",
