@@ -124,7 +124,7 @@ export const portfolioData = {
     {
       title: "Interfaz Rating de Peliculas - RetroRank",
       description:
-        "Aplicación web para calificación de películas con React, Tailwind CSS y JavaScript.",
+        "Aplicación web para calificación de películas con HTML, CSS y JavaScript, utilizando localStorage para persistencia de datos.",
       image: "/projects/RetroRank.png",
       stack: ["HTML", "CSS", "JavaScript"],
       demo: "https://retrorank.vercel.app/",
