@@ -79,7 +79,7 @@ export const portfolioData = {
     {
       title: "Proyecto MVC - CRUD Medico",
       description:
-        "Aplicación web de gestión de médicos utilizando el patrón MVC con ASP.NET Framework, Entity Framework y SQL Server.",
+        "Aplicación web de gestión de médicos utilizando el patrón MVC con ASP.NET Framework, Entity Framework y SQL Server. Credenciales de prueba: SuperAdmin / 123",
       image: "/projects/ProyectoMVC.png",
       stack: [".NET Framework", "Entity Framework", "SQL Server"],
       demo: "https://crudkdortega.somee.com",
