@@ -80,7 +80,7 @@ export const portfolioData = {
       title: "Proyecto MVC - CRUD Medico",
       description:
         "Aplicación web de gestión de médicos utilizando el patrón MVC con ASP.NET Framework, Entity Framework y SQL Server.",
-      image: "./public/projects/proyectoMVC.png",
+      image: "/projects/ProyectoMVC.png",
       stack: [".NET Framework", "Entity Framework", "SQL Server"],
       demo: "https://crudkdortega.somee.com",
       repo: "https://github.com/KD24Ortega/ProyectoP1_DesarrolloWEB.git",
@@ -89,7 +89,7 @@ export const portfolioData = {
       title: "Aplicacion de Cuestionario de Estudio con PWA",
       description:
         "Aplicación web para gestión de cuestionarios con soporte offline y notificaciones push.",
-      image: "./public/projects/AplicacionPWACuestionario.png",
+      image: "/projects/AplicacionPWACuestionario.png",
       stack: ["React", "Bootstrap", "TypeScript", "PWA"],
       demo: "https://quest-ts.vercel.app/",
       repo: "https://github.com/KD24Ortega/cuestionariots.git",
@@ -98,7 +98,7 @@ export const portfolioData = {
       title: "Aplicacion de Gestion de Gastos con PWA",
       description:
         "Aplicación web para gestión de gastos personales con soporte offline, gráficos y notificaciones push.",
-      image: "./public/projects/GastoZen.png",
+      image: "/projects/GastoZen.png",
       stack: ["React", "Bootstrap", "JavaScript", "PWA"],
       demo: "https://gastozen.vercel.app/",
       repo: "https://github.com/KD24Ortega/exposicionp3_kd.git",
@@ -107,7 +107,7 @@ export const portfolioData = {
       title: "Proyecto Monitoreo de Niveles de Depresion y Ansiedad - CalmaSense",
       description:
         "Aplicación web para monitoreo de niveles de depresión y ansiedad utilizando FastAPI para el backend, React para el frontend y PostgreSQL para la base de datos.",
-      image: "./public/projects/CalmaSense.png",
+      image: "/projects/CalmaSense.png",
       stack: ["Python", "FastAPI", "Docker", "DLIB", "React", "Tailwind CSS", "JavaScript", "PostgreSQL"],
       demo: "#",
       repo: "https://github.com/KD24Ortega/Proyecto_Lectura_Espejo_Inteligente.git",
@@ -116,7 +116,7 @@ export const portfolioData = {
       title: "Proyecto Monitoreo de Niveles de Atencion - FaceEDU",
       description:
         "Aplicación web para monitoreo de niveles de atención utilizando FastAPI para el backend, React para el frontend y PostgreSQL para la base de datos.",
-      image: "./public/projects/FaceEDU.png",
+      image: "/projects/FaceEDU.png",
       stack: ["Python", "OpenCV", "MediaPipe", "MySQL"],
       demo: "#",
       repo: "https://github.com/KD24Ortega/Proyecto_Lectura_Espejo_Inteligente.git",
