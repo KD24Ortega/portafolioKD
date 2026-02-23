@@ -119,7 +119,16 @@ export const portfolioData = {
       image: "/projects/FaceEDU.png",
       stack: ["Python", "OpenCV", "MediaPipe", "MySQL"],
       demo: "#",
-      repo: "https://github.com/KD24Ortega/Proyecto_Lectura_Espejo_Inteligente.git",
+      repo: "https://github.com/KD24Ortega/FaceEdu.git",
+    },
+    {
+      title: "Interfaz Rating de Peliculas - RetroRank",
+      description:
+        "Aplicación web para calificación de películas con React, Tailwind CSS y JavaScript.",
+      image: "/projects/RetroRank.png",
+      stack: ["HTML", "CSS", "JavaScript"],
+      demo: "https://retrorank.vercel.app/",
+      repo: "https://github.com/KD24Ortega/PRY_WEB_COMPONENTS_P1.git",
     }
   ],
 };
