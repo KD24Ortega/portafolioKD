@@ -45,7 +45,7 @@ export default function Hero() {
         </Motion.div>
 
         <Motion.div className="hero-card" variants={fadeSlideUpFast}>
-          <img src="/profile.jpg" alt="Foto de perfil" />
+          {/* <img src="/profile.jpg" alt="Foto de perfil" /> */}
           <div className="hero-card-info">
             <p>{personal.location}</p>
             <a href={`mailto:${personal.email}`}>{personal.email}</a>
