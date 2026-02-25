@@ -55,7 +55,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="container nav-content">
-        <a href="#inicio" className="brand" onClick={handleNavClick}>TuPortfolio</a>
+        <a href="#inicio" className="brand" onClick={handleNavClick}>PortafolioKD</a>
 
         <button
           type="button"
