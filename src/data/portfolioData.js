@@ -1,7 +1,7 @@
 export const portfolioData = {
   personal: {
     name: "Kevin Ortega",
-    role: "Desarrollador Web / Full Stack",
+    role: "Desarrollador Web",
     tagline:
       "Construyo aplicaciones web modernas, responsivas y enfocadas en una buena experiencia de usuario.",
     location: "Quito - Ecuador",
