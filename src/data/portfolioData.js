@@ -81,27 +81,9 @@ export const portfolioData = {
       description:
         "Aplicación web de gestión de médicos utilizando el patrón MVC con ASP.NET Framework, Entity Framework y SQL Server. Credenciales de prueba: SuperAdmin / 123",
       image: "/projects/ProyectoMVC.png",
-      stack: [".NET Framework", "Entity Framework", "SQL Server"],
+      stack: [".NET Framework", "Entity Framework", "SQL Server", "C#", "JavaScript", "Bootstrap"],
       demo: "https://crudkdortega.somee.com",
       repo: "https://github.com/KD24Ortega/ProyectoP1_DesarrolloWEB.git",
-    },
-    {
-      title: "Aplicacion de Cuestionario de Estudio con PWA",
-      description:
-        "Aplicación web para gestión de cuestionarios con soporte offline y notificaciones push.",
-      image: "/projects/AplicacionPWACuestionario.png",
-      stack: ["React", "Bootstrap", "TypeScript", "PWA"],
-      demo: "https://quest-ts.vercel.app/",
-      repo: "https://github.com/KD24Ortega/cuestionariots.git",
-    },
-    {
-      title: "Aplicacion de Gestion de Gastos con PWA",
-      description:
-        "Aplicación web para gestión de gastos personales con soporte offline, gráficos y notificaciones push.",
-      image: "/projects/GastoZen.png",
-      stack: ["React", "Bootstrap", "JavaScript", "PWA"],
-      demo: "https://gastozen.vercel.app/",
-      repo: "https://github.com/KD24Ortega/exposicionp3_kd.git",
     },
     {
       title: "Proyecto Monitoreo de Niveles de Depresion y Ansiedad - CalmaSense",
@@ -129,6 +111,24 @@ export const portfolioData = {
       stack: ["HTML", "CSS", "JavaScript"],
       demo: "https://retrorank.vercel.app/",
       repo: "https://github.com/KD24Ortega/PRY_WEB_COMPONENTS_P1.git",
+    },
+    {
+      title: "Aplicacion de Cuestionario de Estudio con PWA",
+      description:
+        "Aplicación web para gestión de cuestionarios con soporte offline y notificaciones push.",
+      image: "/projects/AplicacionPWACuestionario.png",
+      stack: ["React", "Bootstrap", "TypeScript", "PWA"],
+      demo: "https://quest-ts.vercel.app/",
+      repo: "https://github.com/KD24Ortega/cuestionariots.git",
+    },
+    {
+      title: "Aplicacion de Gestion de Gastos con PWA",
+      description:
+        "Aplicación web para gestión de gastos personales con soporte offline, gráficos y notificaciones push.",
+      image: "/projects/GastoZen.png",
+      stack: ["React", "Bootstrap", "JavaScript", "PWA"],
+      demo: "https://gastozen.vercel.app/",
+      repo: "https://github.com/KD24Ortega/exposicionp3_kd.git",
     }
   ],
 };

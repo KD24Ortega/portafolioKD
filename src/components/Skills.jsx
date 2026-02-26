@@ -7,6 +7,8 @@ import {
   fadeSlideUpFast,
   staggerContainer,
   staggerItem,
+  staggerContainerStrong,
+  staggerItemStrong,
   viewportOnce,
 } from "../motionPresets";
 
@@ -116,14 +118,25 @@ const iconMap = {
   "Rocky Linux": <SiRockylinux />,
 };
 
-function SkillGroup({ title, items }) {
+function SkillGroup({ title, items, reduceMotion }) {
   return (
-    <Motion.div className="skill-group card" variants={fadeSlideUpFast}>
+    <Motion.div className="skill-group card" variants={staggerItem} layout>
       <h4>{title}</h4>
 
-      <Motion.div className="skills-icons-grid" variants={staggerContainer}>
-        {items.map((item) => (
-          <Motion.div key={item} className="tech-card" title={item} variants={staggerItem}>
+      <Motion.div
+        className="skills-icons-grid"
+        variants={staggerContainerStrong}
+        initial={reduceMotion ? false : "hidden"}
+        animate={reduceMotion ? undefined : "visible"}
+      >
+        {(items ?? []).map((item) => (
+          <Motion.div
+            key={item}
+            className="tech-card"
+            title={item}
+            variants={staggerItemStrong}
+            layout
+          >
             <div className="tech-icon">{iconMap[item] || <FaCode />}</div>
             <span className="tech-label">{item}</span>
           </Motion.div>
@@ -142,7 +155,9 @@ export default function Skills() {
 
   const visibleEntries = useMemo(() => {
     if (!activeCategory) return Object.entries(skills);
-    return [[activeCategory, skills[activeCategory]]];
+    const selected = skills[activeCategory];
+    if (!selected) return [];
+    return [[activeCategory, selected]];
   }, [activeCategory, skills]);
 
   return (
@@ -179,9 +194,16 @@ export default function Skills() {
           ))}
         </Motion.div>
 
-        <Motion.div className="grid-2" variants={staggerContainer}>
+        <Motion.div
+          key={activeCategory ?? "all"}
+          className="grid-2"
+          variants={staggerContainer}
+          initial={reduceMotion ? false : "hidden"}
+          animate={reduceMotion ? undefined : "visible"}
+          layout
+        >
           {visibleEntries.map(([category, items]) => (
-            <SkillGroup key={category} title={category} items={items} />
+            <SkillGroup key={category} title={category} items={items} reduceMotion={reduceMotion} />
           ))}
         </Motion.div>
       </div>
