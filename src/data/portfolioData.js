@@ -7,7 +7,7 @@ export const portfolioData = {
     location: "Quito - Ecuador",
     email: "david.ortega2468@gmail.com",
     github: "https://github.com/KD24Ortega",
-    linkedin: "#",//"https://www.linkedin.com/in/david-ortega-0b9350172/",
+    linkedin: "https://www.linkedin.com/in/david-ortega-0b9350172/",
     cv: "/cv.pdf",
   },
 

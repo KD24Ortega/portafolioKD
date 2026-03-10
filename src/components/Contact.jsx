@@ -15,7 +15,7 @@ export default function Contact() {
               <a href={personal.cv} target="_blank" rel="noreferrer">CV</a>
             )}
             <a href={personal.github} target="_blank" rel="noreferrer">GitHub</a>
-            {/* <a href={personal.linkedin} target="_blank" rel="noreferrer">LinkedIn</a> */}
+            <a href={personal.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>

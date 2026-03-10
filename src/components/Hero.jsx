@@ -41,11 +41,14 @@ export default function Hero() {
             <a className="btn btn-secondary" href={personal.github} target="_blank" rel="noreferrer">
               GitHub
             </a>
+            <a className="btn btn-secondary" href={personal.linkedin} target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
           </div>
         </Motion.div>
 
         <Motion.div className="hero-card" variants={fadeSlideUpFast}>
-          {/* <img src="/profile.jpg" alt="Foto de perfil" /> */}
+          <img src="/profile.jpg" alt="Foto de perfil" />
           <div className="hero-card-info">
             <p>{personal.location}</p>
             <a href={`mailto:${personal.email}`}>{personal.email}</a>
